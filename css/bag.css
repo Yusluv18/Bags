@@ -1,71 +1,108 @@
-*{
+/* @media (min-width:355px) {
+    .star div img {
+        width: 200px !important;
+        background-color: aqua;
+    }
+} */
+
+
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navbar{
+body{
+    overflow-x: hidden;
+}
+
+.navbar {
     background-color: black;
     width: 100%;
     height: 6vh;
 }
 
-.black{
+.black {
     font-weight: 700;
     margin-left: 320px;
     letter-spacing: .2em;
     color: white;
-    font-size: .85em; 
+    font-size: .85em;
     padding-top: 10px;
     /* justify-content: center; */
 }
 
-.white{
+.white {
     font-weight: 700;
     letter-spacing: .2em;
     font-size: .85em;
     color: rgb(223, 195, 40);
     text-transform: uppercase;
-    
+
 }
 
-.page{
+.page {
     background-color: white;
     width: 100%;
     height: 30vh;
-}
+    font-family: cursive;
+    font-weight: 800;
 
-.page ul{
+    animation: 10s col linear infinite;
+}
+@keyframes col {
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: rgb(190, 190, 190);
+    }
+    50%{
+        background-color: white;
+    }
+    75%{
+        background-color: rgb(190, 190, 190);
+    }
+    100%{
+        background-color: rgb(48, 15, 15);
+    }
+}
+.page ul {
     list-style: none;
     display: flex;
     text-transform: uppercase;
     justify-content: space-around;
     padding-top: 70px;
 }
-.page ul li a{
+
+.page ul li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
 }
-.diva{
+
+.diva {
     color: red;
     padding-left: 600px;
 }
 
-.text{
+.text {
     margin-left: 50px;
 }
-.gloss{
-    margin-left: 90px; 
+
+.gloss {
+    margin-left: 90px;
 }
 
-.pic{
+.pic {
     height: 500px;
     background-image: url(../img/Woman.webp);
     background-size: cover;
 }
 
-.total{
+.total {
     font-family: "Poppins", serif;
     font-weight: 100;
     font-size: 13px;
@@ -75,64 +112,96 @@
     flex-wrap: wrap;
     margin-left: 70px;
     margin-top: 6px;
+
 }
-.malite{
+.total div{
+    margin-top: 30px;
+}
+.malite {
     width: 282px;
 }
-
-.our{
+.malite:hover{
+    transition: .3s;
+scale: 0.9;
+}
+.our {
     font-size: 40px;
-    
+
+}
+.hd{
+    width: 30vw;
+    margin:40px auto;
+    text-align: center;
 }
 
-.text-2{
-margin-left: 80px;
+.text-2 {
+    margin-left: 80px;
 }
 
-.gloss{
-        margin-left: 90px; 
-    }
+.gloss {
+    margin-left: 90px;
+}
 
-.star{
-    width: 250px;
+.star {
+    width: 95vw;
     display: flex;
-    margin-top: 70px;
+    margin: 100px auto;
     gap: 8px;
-    margin-left: 10px;
+    overflow-x: scroll;
+
 }
+.flex2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.star div {
+    width: 24%;
+}
+.star div h3 {
+    width: 64%;
+}
+.star div span {
+    width: 64%;
+}
+
+
 
 .footer {
-    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     height: 250px;
-  }
    
-  .footer-column {
-    margin: 0 15px;
-  }
-   
-  .footer-column h3 {
+    background-color: aliceblue;
+}
+
+.footer-column {
+   padding-bottom: 30px !important;
+}
+
+.footer-column h3 {
     font-weight: bold;
     margin-bottom: 20px;
-  }
-   
-  .footer-column ul {
-   list-style-type: none;
-  }
-   
-  .footer-column ul li {
-   margin-bottom: 10px;
-  }
-   
-  .footer-column ul li a {
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
     text-decoration: none;
     color: #000;
     font-size: 0.9rem;
-  }
+    
+}
 
-   
-  footer {
+
+footer {
     color: white;
     width: 950px;
     height: 60px;
@@ -142,7 +211,9 @@ margin-left: 80px;
     /* background-color: #666666; */
     font-weight: bold;
 }
-.footer-column h4{
-    margin: 15px;
+
+.footer-column h4 {
+    margin:20px auto;
     font-weight: 700;
+
 }
